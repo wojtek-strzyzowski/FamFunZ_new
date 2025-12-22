@@ -1,9 +1,11 @@
 import { createApp } from 'vue'
-import './style.css'
+import './styles/variables.scss'
+import './styles/global.scss'
 import App from './App.vue'
 //import { vuetify } from './plugins/vuetify'
 import vuetify from './plugins/vuetify'
 import { router } from './router/'
+
 
 createApp(App)
     .use(vuetify)

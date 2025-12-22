@@ -105,23 +105,23 @@ frontend/
 ### 2. Design System (CURRENT FOCUS)
 Derived from Figma design.
 
-- [x] Define color tokens (primary, secondary, background, surface, accent) 
-      ---->In deiner vuetify.js  definiert
+- [x] Define color tokens (primary, secondary, background, surface, accent)  
+      ----> In `vuetify.js` definiert
 - [x] Setup Vuetify theme configuration
 - [x] Define global border radius & elevation rules
-- [x] Define typography system:   
-      ----> Fonts definiert, aber noch nicht in global.scss eingebunden
+- [x] Define typography system  
+      ----> Fonts definiert, aber noch nicht global importiert
   - Headlines: Playfair Display
   - Body: Inter
   - UI / Buttons: Poppins
 - [ ] Import and register fonts globally
 - [ ] Create global SCSS variables
-- [ ] Define global background gradient
+- [x] Define global background gradient (via `global.scss`)
 
 ---
 
 ### 3. Layout Architecture
-- [ ] Create DefaultLayout.vue
+- [x] DefaultLayout.vue created (minimal)
 - [ ] Apply global background & page padding
 - [ ] Prepare header/footer slots
 - [ ] Mobile-first layout constraints
