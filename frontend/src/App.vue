@@ -1,11 +1,14 @@
-<script setup>
-import DefaultLayout from './layouts/DefaultLayout.vue'
-</script>
-
 <template>
-  <DefaultLayout />
+  <v-app>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
+<script setup>
+</script>
+
 <style>
-/* Keine scoped Styles hier – alles kommt über global.scss */
+/* global.scss sorgt für Gradient und Fonts */
 </style>

@@ -1,13 +1,14 @@
 <script setup>
+  import DefaultLayout from '../layouts/DefaultLayout.vue';
+  import HeroSection from '../components/hero/HeroSection.vue';
 </script>
 
 
 <template>
-  <div>
-    <h1>FamFunZ Landing Page</h1>
-    <p>Hallo Noel ich liebe dich</p>
-    <button color="primary">Noel</button>
-  </div>
+  <DefaultLayout>
+    <HeroSection />
+    <!-- Später: StatsCards, Latest Adventures, CTA -->
+  </DefaultLayout>
 </template>
 
 
