@@ -5,8 +5,8 @@
 <template>
   <div>
     <h1>FamFunZ Landing Page</h1>
-    <p>Hallo Noel ich liebe dich</p>
-    <button color="primary">Noel</button>
+    <p>Hallo Dies ist ein Test!!</p>
+    <button color="primary">Drück mich</button>
   </div>
 </template>
 
