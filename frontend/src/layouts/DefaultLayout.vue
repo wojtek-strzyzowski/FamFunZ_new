@@ -1,6 +1,11 @@
+<script setup>
+  import AppHeader from '../components/ui/AppHeader.vue';
+</script>
+
 <template>
   <div class="default-layout">
-    <slot />
+    <AppHeader />
+    <slot  ></slot>
   </div>
 </template>
 

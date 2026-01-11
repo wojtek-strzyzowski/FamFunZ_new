@@ -6,6 +6,7 @@
 
 <template>
   <DefaultLayout>
+    
     <HeroSection />
     <!-- Später: StatsCards, Latest Adventures, CTA -->
   </DefaultLayout>
