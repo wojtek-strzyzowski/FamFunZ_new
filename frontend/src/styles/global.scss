@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap');
 
 
-html,body {
+html,body, #app, .v-application, .v-main  {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #A0F0D1 0%, #6A5AE0 100%);
   margin: 0;
