@@ -1,6 +1,6 @@
 <script setup>
   import DefaultLayout from '../layouts/DefaultLayout.vue';
-  import HeroSection from '../components/hero/HeroSection.vue';
+  import HeroSection from '../components/hero/LandingHero.vue';
 </script>
 
 

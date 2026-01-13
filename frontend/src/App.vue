@@ -1,14 +1,8 @@
 <template>
   <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
+    <router-view />
   </v-app>
 </template>
 
 <script setup>
 </script>
-
-<style>
-/* global.scss sorgt für Gradient und Fonts */
-</style>

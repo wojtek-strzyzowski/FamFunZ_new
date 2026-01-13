@@ -2,21 +2,26 @@
 </script>
 
 <template>
-  <v-app-bar app dense color="surface" dark>
-    <!-- Logo / App Name -->
-    <v-toolbar-title>Fam Fun Z</v-toolbar-title>
+  <v-app-bar app flat color="white" height="80">
+    <div class="d-flex align-center ms-4">
+      <v-avatar size="40" color="primary">
+        <span class="text-white text-h6">F</span>
+      </v-avatar>
 
-    <!-- Spacer schiebt alles rechts -->
-    <v-spacer> </v-spacer>
+      <div class="ms-3">
+        <div class="text-h7 text-blue-darken-2 font-weight-bold">FamFunZ</div>
+        <div class="text-caption text-grey-darken-1">Explore. Share. Connect.</div>
+      </div>
+    </div>
 
-    <!-- Buttons mit Margin -->
-    <v-btn color="black" dark class="me-2">Explore</v-btn>
-    <v-btn color="primary" variant="flat">Sign In</v-btn>
+    <v-spacer />
+
+    <v-btn size="small" variant="tonal" class="text-black me-2">Explore</v-btn>
+    <v-btn size="small" color="deep-purple-accent-2" variant="flat">Sign In</v-btn>
 
   </v-app-bar>
 </template>
 
-
-<style scoped>
+<style scoped>  
 /* Optional: minimal, Vuetify übernimmt fast alles */
 </style>
