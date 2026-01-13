@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <v-app-bar app flat color="white" height="80">
+  <v-app-bar app flat color="background" height="80">
     <div class="d-flex align-center ms-4">
       <v-avatar size="40" color="primary">
         <span class="text-white text-h6">F</span>

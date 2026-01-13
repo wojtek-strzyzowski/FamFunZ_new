@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="hero-section">
     <!-- Hero Top: Avatar + Text + Search -->
-    <v-row align="center" justify="center" class="mb-12">
+    <v-row class="d-flex align-center justify-center mb-12">
       <!-- Avatar oben zentriert -->
       <v-col cols="12" class="d-flex justify-center">
         <v-avatar size="80" color="lightblue">
@@ -29,20 +29,20 @@
     </v-row>
 
     <!-- Stats Cards -->
-    <v-row justify="center" align="stretch" class="stats-row" dense>
-      <v-col cols="12" md="3" class="mb-4">
+    <v-row class="d-flex align-center justify-center stats-row" dense>
+      <v-col cols="12" sm="4" class="mb-4">
         <v-card class="pa-6 text-center">
           <div class="text-h5 font-weight-bold">150+</div>
           <div>Family Adventures</div>
         </v-card>
       </v-col>
-      <v-col cols="12" md="3" class="mb-4">
+      <v-col cols="12" sm="4" class="mb-4">
         <v-card class="pa-6 text-center">
           <div class="text-h5 font-weight-bold">89</div>
           <div>Active Families</div>
         </v-card>
       </v-col>
-      <v-col cols="12" md="3" class="mb-4">
+      <v-col cols="12" sm="4" class="mb-4">
         <v-card class="pa-6 text-center">
           <div class="text-h5 font-weight-bold">25+</div>
           <div>Locations Covered</div>
