@@ -1,6 +1,7 @@
 <script setup>
 import AdventureCard from '../cards/AdventureCard.vue';
 import slidecarousel from '../cards/slidecarousel.vue';
+import '@mdi/font/css/materialdesignicons.css'
 
 </script>
 
@@ -23,14 +24,35 @@ import slidecarousel from '../cards/slidecarousel.vue';
         </p>
 
         <!-- Suchleiste -->
-        <v-text-field
-          label="Search activities, places, or tips..."
-          outlined
-          dense
-          hide-details
-          class="hero-search mt-4"
-          append-inner-icon="mdi-magnify"
-        />
+        <div class="hero-search-wrapper mt-8">
+          <p class="hero-search-title">
+            Where to go with the kids today?
+          </p>
+
+          <div class="hero-search-bar">
+           <v-text-field
+              placeholder="Search activities, places, or tips..."
+              variant="solo"
+              flat
+              hide-details
+              density="comfortable"
+              class="hero-search-input"
+            >
+              <template #prepend-inner>
+                <v-icon  size = "20" color="grey-darken-1">mdi-magnify</v-icon>
+              </template>
+            </v-text-field>
+
+            <v-btn
+              icon="mdi-magnify"
+              color="primary"
+              variant="flat"
+              size="x-large"
+              class="hero-search-btn"
+            />
+          </div>
+        </div>
+
       </v-col>
     </v-row>
 
@@ -92,5 +114,35 @@ import slidecarousel from '../cards/slidecarousel.vue';
 .stats-row .v-card {
   background-color: #f5f7ff;
   border-radius: 16px;
+}
+
+.hero-search-wrapper {
+  background: white;
+  border-radius: 28px;
+  padding: 24px 28px;
+  max-width: 720px;
+  margin: 0 auto;
+  box-shadow: 0 25px 60px rgba(90, 100, 160, 0.25);
+}
+
+.hero-search-title {
+  text-align: center;
+  font-weight: 600;
+  color: #5b5f97;
+  margin-bottom: 16px;
+}
+
+.hero-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-search-input .v-field__prepend-inner {
+  margin-left: 12px;
+}
+
+.hero-search-btn {
+  border-radius: 50%;
 }
 </style>
