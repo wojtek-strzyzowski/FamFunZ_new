@@ -1,3 +1,9 @@
+<script setup>
+import AdventureCard from '../cards/AdventureCard.vue';
+import slidecarousel from '../cards/slidecarousel.vue';
+
+</script>
+
 <template>
   <v-container fluid class="hero-section">
     <!-- Hero Top: Avatar + Text + Search -->
@@ -50,10 +56,15 @@
       </v-col>
     </v-row>
   </v-container>
+<!-- kommen später die 3d cards für turn arounds :D -->
+
+<slot/>
+<adventure-card />
+
+
 </template>
 
-<script setup>
-</script>
+
 
 <style scoped>
 .hero-section {
