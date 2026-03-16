@@ -1,7 +1,6 @@
 <script setup>
 import AdventureCard from '../cards/AdventureCard.vue';
-import slidecarousel from '../cards/slidecarousel.vue';
-import '@mdi/font/css/materialdesignicons.css'
+import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 
 </script>
 
@@ -30,53 +29,44 @@ import '@mdi/font/css/materialdesignicons.css'
           </p>
 
           <div class="hero-search-bar">
-           <v-text-field
-              placeholder="Search activities, places, or tips..."
-              variant="solo"
+            <v-text-field
+              prepend-inner-icon="mdi-magnify"
+              placeholder="Search activities..."
               flat
               hide-details
               density="comfortable"
-              class="hero-search-input"
-            >
-              <template #prepend-inner>
-                <v-icon  size = "20" color="grey-darken-1">mdi-magnify</v-icon>
-              </template>
-            </v-text-field>
-
-            <v-btn
-              icon="mdi-magnify"
-              color="primary"
-              variant="flat"
-              size="x-large"
-              class="hero-search-btn"
             />
+            <v-btn color="primary" class="hero-search-btn">
+             Suchen
+            </v-btn>
           </div>
         </div>
-
       </v-col>
     </v-row>
 
     <!-- Stats Cards -->
-    <v-row class="d-flex align-center justify-center stats-row" dense>
-      <v-col cols="12" sm="4" class="mb-4">
-        <v-card class="pa-6 text-center">
-          <div class="text-h5 font-weight-bold">150+</div>
-          <div>Family Adventures</div>
-        </v-card>
-      </v-col>
-      <v-col cols="12" sm="4" class="mb-4">
-        <v-card class="pa-6 text-center">
-          <div class="text-h5 font-weight-bold">89</div>
-          <div>Active Families</div>
-        </v-card>
-      </v-col>
-      <v-col cols="12" sm="4" class="mb-4">
-        <v-card class="pa-6 text-center">
-          <div class="text-h5 font-weight-bold">25+</div>
-          <div>Locations Covered</div>
-        </v-card>
-      </v-col>
-    </v-row>
+        <v-row class="stats-row" dense>
+          <v-col cols="4" class="mb-4">
+            <v-card class="pa-4 text-center h-100">
+              <div class="text-h6 font-weight-bold">150+</div>
+              <div class="text-body-2">Family Adventures</div>
+            </v-card>
+          </v-col>
+
+          <v-col cols="4" class="mb-4">
+            <v-card class="pa-4 text-center h-100">
+              <div class="text-h6 font-weight-bold">89</div>
+              <div class="text-body-2">Active Families</div>
+            </v-card>
+          </v-col>
+
+          <v-col cols="4" class="mb-4">
+            <v-card class="pa-4 text-center h-100">
+              <div class="text-h6 font-weight-bold">25+</div>
+              <div class="text-body-2">Locations Covered</div>
+            </v-card>
+          </v-col>
+        </v-row>
   </v-container>
 <!-- kommen später die 3d cards für turn arounds :D -->
 

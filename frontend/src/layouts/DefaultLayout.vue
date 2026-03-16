@@ -1,17 +1,23 @@
 <script setup>
 import AppHeader from '../components/ui/AppHeader.vue'
+import AppFooter from '../components/ui/footer.vue'
 </script>
 
 <template>
-  <AppHeader />
+  <div class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <AppHeader />
 
-  <v-main>
-    <slot>  
+    <!-- Main Content mit Abstand oben und unten -->
+    <v-main class="flex-grow-1 pt-6 pb-6">
+      <slot></slot>
+    </v-main>
 
-    </slot>
-  </v-main>
+    <!-- Footer -->
+    <AppFooter />
+  </div>
 </template>
 
 <style scoped>
-/* Optional: minimal, Vuetify übernimmt fast alles */
+/* pt-6 = padding-top, pb-6 = padding-bottom */
 </style>

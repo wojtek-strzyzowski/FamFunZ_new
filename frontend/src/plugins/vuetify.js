@@ -33,7 +33,6 @@ export default createVuetify({
   },
   icons: {
     defaultSet: 'mdi',
-    aliases,
-    sets: { mdi },
+    
   },
 });
